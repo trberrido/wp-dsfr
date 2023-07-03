@@ -1,0 +1,11 @@
+p.is-style-highlight {
+	margin-left: 2rem;
+	padding-left: 2rem;
+	border-left: .25rem solid var(--wp--preset--color--primary)
+}
+
+p.is-style-highlight-strong {
+	margin-left: 2rem;
+	padding-left: 2rem;
+	border-left: .25rem solid var(--wp--preset--color--secondary)
+}

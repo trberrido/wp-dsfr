@@ -1,14 +1,13 @@
 <?php
 
-function dsfr_styles() {
-	wp_register_style(
-		'wp-dsfr',
-		get_template_directory_uri() . '/style.css',
-		array(),
-		false,
-		'all'
-	);
-	wp_enqueue_style( 'wp-dsfr' );
+function dsfr_include_utils(){
+
+	foreach ( glob( __DIR__ . '/inc/*.php' ) as $util_file ){
+
+		include_once $util_file;
+
+	}
+
 }
 
-add_action( 'wp_enqueue_scripts', 'dsfr_styles' );
+add_action('after_setup_theme', 'dsfr_include_utils');
