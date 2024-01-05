@@ -1,7 +1,8 @@
 <?php
 
-// adding css rules to the existing blocks
-add_action( 'init', 'dsfr__enqueue_blocks_styles' );
+// Adding css rules to the existing blocks.
+// With `wp_enqueue_block_style`,
+// the css file is inlinely loaded only if the block is present on the page.
 function dsfr__enqueue_blocks_styles() {
 
 	$blocks_css_directory = '/assets/css/blocks/';
@@ -24,10 +25,12 @@ function dsfr__enqueue_blocks_styles() {
 	}
 
 }
+add_action( 'init', 'dsfr__enqueue_blocks_styles' );
 
-function dsfr_styles() {
+// Adding css for every page.
+function dsfr__enqueue_styles() {
 
-	foreach ( glob( get_template_directory() . '/assets/css/*.css' ) as $css_file ){
+	foreach ( glob( get_template_directory() . '/assets/css/*.css' ) as $css_file ) {
 
 		$file_name = substr( strrchr( $css_file, '/' ), 1 );
 		wp_enqueue_style( 'wp-dsfr-' . $file_name, get_template_directory_uri() . '/assets/css/' . $file_name );
@@ -35,5 +38,4 @@ function dsfr_styles() {
 	}
 
 }
-
-add_action( 'enqueue_block_assets', 'dsfr_styles' );
+add_action( 'enqueue_block_assets', 'dsfr__enqueue_styles' );

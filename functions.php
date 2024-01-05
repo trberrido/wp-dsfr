@@ -1,13 +1,14 @@
 <?php
 
-function dsfr_include_utils(){
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
-	foreach ( glob( __DIR__ . '/inc/*.php' ) as $util_file ){
+function dsfr__include() {
 
-		include_once $util_file;
-
+	foreach ( glob( get_template_directory() . '/inc/*.php' ) as $file ){
+		require_once $file;
 	}
 
 }
-
-add_action('after_setup_theme', 'dsfr_include_utils');
+add_action( 'after_setup_theme', 'dsfr__include' );
