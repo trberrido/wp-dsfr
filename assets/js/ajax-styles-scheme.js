@@ -1,3 +1,6 @@
+// handle the switch between light and dark theme
+// trigger by the button `.swtich-styles a`
+
 window.addEventListener( 'DOMContentLoaded', () => {
 
 	const wpdsfr_switchTheme = e => {
@@ -21,7 +24,7 @@ window.addEventListener( 'DOMContentLoaded', () => {
 			schemeSwitch.removeEventListener( 'click', wpdsfr_switchTheme );
 		});
 
-		fetch( wpdsfr_data.site_url + '/wp-admin/admin-ajax.php?action=dsfr_reload_styles&scheme=' + localStorage.getItem( 'scheme' ) )
+		fetch( wpdsfr_data.siteUrl + '/wp-admin/admin-ajax.php?action=dsfr_reload_styles&scheme=' + localStorage.getItem( 'scheme' ) )
 			.then( response => response.text() )
 			.then( result => {
 
@@ -52,14 +55,15 @@ window.addEventListener( 'DOMContentLoaded', () => {
 
 	} else {
 
+		// The default loaded theme is light, so we only need to fetch the dark theme
 		if ( localStorage.getItem( 'scheme' ) === 'dark' ){
 			wpdsfr_fetchTheme();
 		}
 
 	}
 
-	document.querySelectorAll( '.switch-styles a' ).forEach( schemeSwitch => {
-		schemeSwitch.addEventListener( 'click', wpdsfr_switchTheme );
+	document.querySelectorAll( '.switch-styles a' ).forEach( schemeSwitchButton => {
+		schemeSwitchButton.addEventListener( 'click', wpdsfr_switchTheme );
 	});
 
-})
+});

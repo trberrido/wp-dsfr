@@ -3,7 +3,7 @@
 function dsfr__enqueue_scripts() {
 
 	$wpdsfr_data = array(
-		'site_url'	=> esc_url( site_url() )
+		'siteUrl'	=> esc_url( site_url() )
 	);
 
 	foreach ( glob( get_template_directory() . '/assets/js/*.js' ) as $js_file ) {

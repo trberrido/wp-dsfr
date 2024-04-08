@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"textdomain": "dsfr",
+	"name": "dsfr/menu",
+	"title": "Menu",
+	"description": "Construit un menu",
+	"icon": "menu",
+	"category": "theme",
+	"keywords": ["menu"],
+	"supports":{
+		"customClassName": true,
+		"html": false
+	},
+	"attributes": {
+		"menuLocation": {
+			"type": "string",
+			"default": "primary-menu"
+		}
+	},
+	"render": "file:./render.php"
+}

@@ -21,12 +21,7 @@
 					"name": "Background"
 				},
 				{
-					"slug": "text-title",
-					"color": "#FFFFFF",
-					"name": "Title"
-				},
-				{
-					"slug": "text-default",
+					"slug": "contrast",
 					"color": "#FFFFFF",
 					"name": "Text"
 				}

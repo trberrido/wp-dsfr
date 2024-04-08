@@ -7,7 +7,8 @@ function dsfr__update_with_dark_theme( $theme_json ) {
 	$dark_theme = wp_json_file_decode(
 		file_get_contents( get_template_directory() . '/styles/dark.json' ),
 		array( 'associative' => true )
-	);
+	); console( $dark_theme, json_last_error(), json_last_error_msg() ); exit();
+
 	return $theme_json->update_with( $dark_theme );
 
 }
