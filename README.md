@@ -11,8 +11,6 @@ Design System WordPress Gutenberg FSE
 ## wp-config.php
 
 ```
-——————————
-
 define( ‘FORCE_SSL_ADMIN’,		true );
 define( 'DISALLOW_FILE_EDIT',	true );
 
@@ -36,6 +34,4 @@ define( 'AUTH_COOKIE',			'my_auth_cookie' );
 define( 'SECURE_AUTH_COOKIE',	'my_sec_cookie' );
 define( 'LOGGED_IN_COOKIE',		'my_logged_cookie' );
 define( 'TEST_COOKIE',			'my_test_cookie' );
-
-——————————
 ```
