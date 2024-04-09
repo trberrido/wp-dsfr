@@ -18,7 +18,7 @@ function console() {
 
 // this filter is usefull to know what data are necessary
 // when using the function inc/blocks.php > dw__block__get()
-function dev__block_dissect( $block_content, $block ) {
+function dsfr__block_dissect( $block_content, $block ) {
 
 	if ( 'core/' === $block['blockName'] ) {
 		console( $block );
@@ -27,4 +27,4 @@ function dev__block_dissect( $block_content, $block ) {
 	return $block_content;
 
 }
-// add_filter( 'render_block', 'dev__block_dissect', 10, 2 );
+// add_filter( 'render_block', dsfr__block_dissect', 10, 2 );

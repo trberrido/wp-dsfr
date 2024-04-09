@@ -1,6 +1,8 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit;
 
 // prevent /users enumeration from REST API
+add_filter( 'rest_endpoints', 'dsfr__remove_users_endpoints');
+
 function dsfr__remove_users_endpoints( $endpoints ) {
 
 	if ( isset( $endpoints['/wp/v2/users'] ) ) {
@@ -14,4 +16,3 @@ function dsfr__remove_users_endpoints( $endpoints ) {
 	return $endpoints;
 
 }
-add_filter( 'rest_endpoints', 'dsfr__remove_users_endpoints');

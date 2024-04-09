@@ -1,8 +1,8 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit;
 
-add_action( 'init', 'dsfr__block__register_blocks_styles' );
+add_action( 'init', 'dsfr__register_blocks_styles' );
 
-function dsfr__block__register_blocks_styles() {
+function dsfr__register_blocks_styles() {
 
 	$blocks_styles = array(
 		'core/navigation'	=> array(

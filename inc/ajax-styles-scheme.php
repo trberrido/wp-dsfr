@@ -1,6 +1,8 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit;
 
 // This ajax call enables switching between light and dark schemes.
+add_action( 'wp_ajax_dsfr_reload_styles', 'dsfr__reload_styles' );
+add_action( 'wp_ajax_nopriv_dsfr_reload_styles', 'dsfr__reload_styles' );
 
 function dsfr__update_with_dark_theme( $theme_json ) {
 
@@ -28,5 +30,3 @@ function dsfr__reload_styles() {
 	exit();
 
 }
-add_action( 'wp_ajax_dsfr_reload_styles', 'dsfr__reload_styles' );
-add_action( 'wp_ajax_nopriv_dsfr_reload_styles', 'dsfr__reload_styles' );
