@@ -18,7 +18,11 @@ function dsfr__block__register_style_variations() {
 		'core/navigation'	=> array(
 			array(
 				'name'	=> 'main',
-				'label'	=> 'Main Navigation'
+				'label'	=> 'Navigation principale'
+			),
+			array(
+				'name'	=> 'header-tools',
+				'label'	=> 'Header, outils'
 			)
 		),
 		'core/paragraph'	=> array(
