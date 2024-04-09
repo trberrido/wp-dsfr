@@ -1,4 +1,4 @@
-<?php
+<?php if ( ! defined( 'ABSPATH' ) ) exit;
 
 // prevent /users enumeration from REST API
 function dsfr__remove_users_endpoints( $endpoints ) {

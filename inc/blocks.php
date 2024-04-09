@@ -1,4 +1,4 @@
-<?php
+<?php if ( ! defined( 'ABSPATH' ) ) exit;
 
 add_action( 'init', 'dsfr__register_blocks', 5 );
 

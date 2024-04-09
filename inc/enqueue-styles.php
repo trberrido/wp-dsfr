@@ -1,4 +1,4 @@
-<?php
+<?php if ( ! defined( 'ABSPATH' ) ) exit;
 
 // Adding css rules to the existing blocks.
 // With `wp_enqueue_block_style`,

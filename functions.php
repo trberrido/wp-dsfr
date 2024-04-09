@@ -1,8 +1,4 @@
-<?php
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+<?php if ( ! defined( 'ABSPATH' ) ) exit;
 
 function dsfr__include() {
 

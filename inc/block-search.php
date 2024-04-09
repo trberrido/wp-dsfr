@@ -1,4 +1,4 @@
-<?php
+<?php if ( ! defined( 'ABSPATH' ) ) exit;
 
 add_filter( 'aws_searchbox_markup', 'my_aws_searchbox_markup' );
 function my_aws_searchbox_markup( $markup ) {

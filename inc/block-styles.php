@@ -1,4 +1,4 @@
-<?php
+<?php if ( ! defined( 'ABSPATH' ) ) exit;
 
 // Adding block styles variations
 // https://developer.wordpress.org/themes/features/block-style-variations/

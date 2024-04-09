@@ -1,4 +1,4 @@
-<?php
+<?php if ( ! defined( 'ABSPATH' ) ) exit;
 
 // print an undefined list of arguments
 // @param mixed $fn_argv
