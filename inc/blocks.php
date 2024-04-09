@@ -1,20 +1,10 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit;
 
-add_action( 'init', 'dsfr__register_blocks', 5 );
+add_action( 'init', 'dsfr__block__register_blocks_styles' );
 
-function dsfr__register_blocks() {
+function dsfr__block__register_blocks_styles() {
 
-	foreach ( glob( get_stylesheet_directory() . '/blocks/*') as $block ) {
-		register_block_type( $block );
-	}
-
-}
-
-add_action( 'init', 'dsfr__block__register_style_variations' );
-
-function dsfr__block__register_style_variations() {
-
-	$blocks_style_variations = array(
+	$blocks_styles = array(
 		'core/navigation'	=> array(
 			array(
 				'name'	=> 'main',
@@ -27,18 +17,23 @@ function dsfr__block__register_style_variations() {
 		),
 		'core/paragraph'	=> array(
 			array(
+				'name'	=> 'highlight',
+				'label'	=> 'Mise en avant',
+			),
+			array(
+				'name'	=> 'highlight-strong',
+				'label'	=> 'Mise en avant accentuée',
+			),
+			array(
 				'name'	=> 'site-logo',
 				'label'	=> 'Logo'
 			)
-		),
+		)
 	);
 
-	foreach ( $blocks_style_variations as $block_name => $style_variations ) {
-		foreach ( $style_variations as $style_variation ) {
-			register_block_style(
-				$block_name,
-				$style_variation
-			);
+	foreach ( $blocks_styles as $block => $styles ) {
+		foreach ( $styles as $style ) {
+			register_block_style( $block, $style );
 		}
 	}
 
