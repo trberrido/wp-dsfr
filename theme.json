@@ -173,7 +173,7 @@
 				"elements": {
 					"link": {
 						":hover": {
-							"css": "opacity: .5"
+							"css": "opacity: .5;"
 						}
 					}
 				}
@@ -199,6 +199,15 @@
 								"background": "var(--wp--preset--color--neutral)"
 							}
 						}
+					}
+				}
+			},
+			"core/search": {
+				"border": {
+					"bottom": {
+						"style": "solid",
+						"width": "3px",
+						"color": "var(--wp--preset--color--primary)"
 					}
 				}
 			},
