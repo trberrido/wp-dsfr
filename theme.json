@@ -1,59 +1,219 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"version": 2,
-	"title": "Light",
+	"version": 3,
+	"title": "Sun / default theme",
 	"settings": {
 		"custom": {
-			"color": {
-				"neutral": {
-					"000": "#DDDDDD"
+			"color":{
+				"source": {
+					"blueMarianne": {
+						"075": "#1B1B35",
+						"100": "#21213F",
+						"113": "#000091",
+						"125": "#272747",
+						"200": "#313178",
+						"525": "#6A6AF4",
+						"625": "#8585F6",
+						"850": "#CACAFB",
+						"925": "#E3E3FD",
+						"950": "#ECECFE",
+						"975": "#F5F5FE"
+					},
+					"redMarianne": {
+						"075": "#2B1919",
+						"100": "#331F1F",
+						"125": "#3B2424",
+						"200": "#5E2A2B",
+						"425": "#C9191E",
+						"472": "#E1000F",
+						"625": "#F95C5E",
+						"850": "#FCBFBF",
+						"925": "#FDDEDE",
+						"950": "#FEE9E9",
+						"975": "#FEF4F4"
+					},
+					"grey": {
+						"0050": "#161616",
+						"0075": "#1E1E1E",
+						"0100": "#242424",
+						"0125": "#2A2A2A",
+						"0175": "#353535",
+						"0200": "#3A3A3A",
+						"0425": "#666666",
+						"0625": "#929292",
+						"0850": "#CECECE",
+						"0900": "#DDDDDD",
+						"0925": "#E5E5E5",
+						"0950": "#F6F6F6",
+						"0975": "#F6F6F6",
+						"1000": "#FFFFFF"
+					},
+					"error": {
+						"100": "#391C1C",
+						"425": "#CE0500",
+						"625": "#FF5655",
+						"950": "#FFE9E9"
+					},
+					"success": {
+						"100": "#19271D",
+						"425": "#18753C",
+						"625": "#27A658",
+						"950": "#B8FEC9"
+					},
+					"warning": {
+						"100": "#361E19",
+						"425": "#B34000",
+						"625": "#FC5D00",
+						"950": "#FFE9E6"
+					},
+					"info": {
+						"100": "#1D2437",
+						"425": "#0063CB",
+						"625": "#518FFF",
+						"950": "#E8EDFF"
+					},
+					"focus": {
+						"525": "#0A76F6"
+					}
 				}
 			}
 		},
-		"appearanceTools": false,
+		"appearanceTools": true,
 		"useRootPaddingAwareAlignments": true,
 		"color": {
-			"text": false,
-			"background": false,
+			"text": true,
+			"background": true,
+			"defaultDuotone": false,
 			"defaultGradients": false,
-			"customDuotone": false,
+			"defaultPalette": false,
 			"custom": false,
+			"customDuotone": false,
 			"customGradient": false,
 			"palette": [
 				{
-					"slug": "primary",
-					"color": "#000091",
-					"name": "Primary"
+					"color": "var(--wp--custom--color--source--blue-marianne--113)",
+					"name": "BM/strong",
+					"slug": "primary-strong"
 				},
 				{
-					"slug": "secondary",
-					"color": "#E1000F",
-					"name": "Secondary"
+					"color": "var(--wp--custom--color--source--blue-marianne--525)",
+					"name": "BM/main",
+					"slug": "primary"
 				},
 				{
-					"slug": "base",
-					"color": "#FFFFFF",
-					"name": "Background"
+					"color": "var(--wp--custom--color--source--blue-marianne--850)",
+					"name": "BM/softest",
+					"slug": "primary-softest"
 				},
 				{
-					"slug": "contrast",
-					"color": "#161616",
-					"name": "Text"
+					"color": "var(--wp--custom--color--source--blue-marianne--925)",
+					"name": "BM/light",
+					"slug": "primary-light"
 				},
 				{
-					"slug": "background-action-hover",
-					"color": "#1212FF",
-					"name": "Background hover"
+					"color": "var(--wp--custom--color--source--blue-marianne--950)",
+					"name": "BM/lighter",
+					"slug": "primary-lighter"
 				},
 				{
-					"slug": "background-alt",
-					"color": "#F6F6F6",
-					"name": "Background alternatif"
+					"color": "var(--wp--custom--color--source--blue-marianne--975)",
+					"name": "BM/lightest",
+					"slug": "primary-lightest"
 				},
 				{
-					"slug": "neutral",
-					"color": "#DDDDDD",
-					"name": "Neutre"
+					"color": "var(--wp--custom--color--source--blue-marianne--975)",
+					"name": "BM/inverted",
+					"slug": "primary-inverted"
+				},
+				{
+					"color": "var(--wp--custom--color--source--red-marianne--425)",
+					"name": "RM/strong",
+					"slug": "secondary-strong"
+				},
+				{
+					"color": "var(--wp--custom--color--source--red-marianne--472)",
+					"name": "RM/main",
+					"slug": "secondary"
+				},
+				{
+					"color": "var(--wp--custom--color--source--red-marianne--850)",
+					"name": "RM/softest",
+					"slug": "secondary-softest"
+				},
+				{
+					"color": "var(--wp--custom--color--source--red-marianne--925)",
+					"name": "RM/light",
+					"slug": "secondary-light"
+				},
+				{
+					"color": "var(--wp--custom--color--source--red-marianne--950)",
+					"name": "RM/lighter",
+					"slug": "secondary-lighter"
+				},
+				{
+					"color": "var(--wp--custom--color--source--red-marianne--975)",
+					"name": "RM/lightest",
+					"slug": "secondary-lightest"
+				},
+				{
+					"color": "var(--wp--custom--color--source--grey--0050)",
+					"name": "Neutral/black",
+					"slug": "neutral-black"
+				},
+				{
+					"color": "var(--wp--custom--color--source--grey--0200)",
+					"name": "Neutral/strongest",
+					"slug": "neutral-strongest"
+				},
+				{
+					"color": "var(--wp--custom--color--source--grey--0425)",
+					"name": "Neutral/strong",
+					"slug": "neutral-strong"
+				},
+				{
+					"color": "var(--wp--custom--color--source--grey--0625)",
+					"name": "Neutral/soft",
+					"slug": "neutral-soft"
+				},
+				{
+					"color": "var(--wp--custom--color--source--grey--0850)",
+					"name": "Neutral/softest",
+					"slug": "neutral-softest"
+				},
+				{
+					"color": "var(--wp--custom--color--source--grey--0900)",
+					"name": "Neutral/distinct",
+					"slug": "neutral-distinct"
+				},
+				{
+					"color": "var(--wp--custom--color--source--grey--0925)",
+					"name": "Neutral/light",
+					"slug": "neutral-light"
+				},
+				{
+					"color": "var(--wp--custom--color--source--grey--0950)",
+					"name": "Neutral/lighter",
+					"slug": "neutral-lighter"
+				},
+				{
+					"color": "var(--wp--custom--color--source--grey--0975)",
+					"name": "Neutral/lightest",
+					"slug": "neutral-lightest"
+				},
+				{
+					"color": "var(--wp--custom--color--source--grey--1000)",
+					"name": "Neutral/white",
+					"slug": "neutral-white"
+				},
+				{
+					"color": "var(--wp--custom--color--source--error--425)",
+					"name": "Error",
+					"slug": "error"
+				},
+				{
+					"color": "var(--wp--custom--color--source--error--950)",
+					"name": "Error/lighter",
+					"slug": "error-lighter"
 				}
 			]
 		},
