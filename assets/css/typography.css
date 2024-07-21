@@ -1,0 +1,23 @@
+/* Note : the h 1-6 tags are defined in theme.json */
+
+.has-display-xl-font-size,
+.has-display-lg-font-size,
+.has-display-md-font-size,
+.has-display-sm-font-size,
+.has-display-xs-font-size { margin-bottom: 2rem }
+
+.has-text-lead-font-size,
+.has-text-font-size,
+.has-text-sm-font-size,
+.has-text-xs-font-size { margin-bottom: 1.5rem }
+
+.has-display-xl-font-size {	line-height: 5.5rem }
+.has-display-lg-font-size { line-height: 5rem }
+.has-display-md-font-size { line-height: 4.5rem }
+.has-display-sm-font-size { line-height: 4rem }
+.has-display-xs-font-size { line-height: 3.5rem }
+.has-text-lead-font-size { line-height: 2rem }
+.has-text-lg-font-size { line-height: 1.75rem }
+.has-text-font-size { line-height: 1.5rem }
+.has-text-sm-font-size { line-height: 1.5rem }
+.has-text-xs-font-size { line-height: 1.25rem }
