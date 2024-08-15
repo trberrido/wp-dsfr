@@ -10,10 +10,10 @@ https://www.systeme-de-design.gouv.fr/fondamentaux
 ### Done:
 - color
 - font size
+- spacings
 
 ### Next:
 - font weight / variations
-- spacings
 - grid, layouts, breakpoints
 - icons
 

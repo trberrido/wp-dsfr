@@ -1,0 +1,26 @@
+
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wpdsfr/badges",
+	"version": "0.1.0",
+	"title": "Badges",
+	"category": "theme",
+	"description": "Group of badges",
+	"allowedBlocks": ["wpdsfr/badge"],
+	"supports": {
+		"align": [ "wide", "full" ],
+		"layout": {
+			"allowSwitching": false,
+			"allowInheriting": false,
+			"default": {
+				"type": "flex"
+			}
+		}
+	},
+	"textdomain": "wpdsfr",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScriptModule": "file:./view.js"
+}

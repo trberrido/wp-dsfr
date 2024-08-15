@@ -1,0 +1,36 @@
+
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wpdsfr/alert",
+	"version": "0.1.0",
+	"title": "Alert",
+	"category": "theme",
+	"description": "Les alertes permettent d’attirer l’attention de l’utilisateur sur une information sans interrompre sa tâche en cours.",
+	"styles": [
+		{
+			"isDefault": true,
+			"label": "Information",
+			"name": "info"
+		},
+		{
+			"isDefault": false,
+			"label": "Erreur",
+			"name": "error"
+		},
+		{
+			"isDefault": false,
+			"label": "Success",
+			"name": "success"
+		},
+		{
+			"isDefault": false,
+			"label": "Attention",
+			"name": "warning"
+		}
+	],
+	"textdomain": "wpdsfr",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,30 @@
+/*!*********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/badge/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************/
+.wp-block-wpdsfr-badge {
+  text-transform: uppercase;
+  font-size: var(--wp--preset--font-size--text-sm);
+  font-weight: var(--wp--custom--typography--font-weight--bold);
+  color: var(--wp--custom--color--decision--text--default--neutral);
+  background-color: var(--wp--custom--color--decision--background--contrast--neutral);
+  padding: 0 var(--wp--preset--spacing--40);
+  border-radius: var(--wp--custom--border--radius--sm);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.wp-block-wpdsfr-badge.is-style-info {
+  color: var(--wp--custom--color--decision--text--default--info);
+  background-color: var(--wp--custom--color--decision--background--contrast--info);
+}
+.wp-block-wpdsfr-badge.is-style-error {
+  color: var(--wp--custom--color--decision--text--default--error);
+  background-color: var(--wp--custom--color--decision--background--contrast--error);
+}
+.wp-block-wpdsfr-badge.is-style-success {
+  color: var(--wp--custom--color--decision--text--default--success);
+  background-color: var(--wp--custom--color--decision--background--contrast--success);
+}
+.wp-block-wpdsfr-badge.is-style-warning {
+  color: var(--wp--custom--color--decision--text--default--warning);
+  background-color: var(--wp--custom--color--decision--background--contrast--warning);
+}

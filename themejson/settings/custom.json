@@ -1,0 +1,46 @@
+{
+	"spacing": {
+		"0-5v": ".125rem",
+		"1v" : ".25rem",
+		"1-5v": ".375rem",
+		"1w": ".5rem",
+		"3v": ".75rem",
+		"2w": "1rem",
+		"3w": "1.5rem",
+		"4w": "2rem",
+		"5w": "2.5rem",
+		"6w": "3rem",
+		"7w": "3.5rem",
+		"8w": "4rem",
+		"9w": "4.5rem",
+		"12w": "6rem",
+		"15w": "7.5rem"
+	},
+	"icon": {
+		"size": {
+			"sm": ".75rem",
+			"md": "1rem",
+			"lg": "1.25rem"
+		}
+	},
+	"typography": {
+		"fontWeight": {
+			"light": "300",
+			"regular": "400",
+			"medium": "500",
+			"bold": "700"
+		}
+	},
+	"border": {
+		"width": {
+			"sm": "1px",
+			"md": "2px",
+			"lg": "3px"
+		},
+		"radius": {
+			"sm": ".25rem",
+			"md": ".5rem",
+			"lg": "1rem"
+		}
+	}
+}

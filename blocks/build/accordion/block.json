@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wpdsfr/accordion",
+  "version": "0.1.0",
+  "title": "Accordion",
+  "category": "text",
+  "icon": "block-default",
+  "description": "An accordion item",
+  "parent": [
+    "wpdsfr/accordions"
+  ],
+  "supports": {
+    "interactivity": true
+  },
+  "attributes": {
+    "level": {
+      "type": "integer",
+      "default": 3
+    },
+    "levelOptions": {
+      "type": "array"
+    },
+    "content": {
+      "type": "string"
+    }
+  },
+  "textdomain": "dsfr",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}

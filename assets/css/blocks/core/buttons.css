@@ -1,0 +1,7 @@
+.wp-block-buttons.is-layout-flex {
+	gap: var(--wp--custom--spacing--2-w);
+}
+
+.wp-block-buttons .wp-block-button .wp-block-button__link {
+	padding: var(--wp--custom--spacing--1-w) var(--wp--custom--spacing--3-w);
+}

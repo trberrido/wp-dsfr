@@ -1,0 +1,13 @@
+.wp-block-search__inside-wrapper {
+	border: none;
+}
+
+.wp-block-search__input {
+	border-bottom: var(--wp--custom--border--width--md) solid var(--wp--custom--color--decision--border--action--high--primary);
+	background-color: var(--wp--custom--color--decision--background--contrast--neutral);
+	border-radius: 0.25rem 0 0;
+}
+
+.wp-block-search__button {
+	margin: 0;
+}

@@ -1,0 +1,55 @@
+.wp-block-wpdsfr-accordion {
+	.wp-block-wpdsfr-accordion__title {
+		font-size: initial;
+		margin: 0;
+		.wp-block-wpdsfr-accordion__button {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			text-align: left;
+			font-size: var(--wp--preset--font-size--text);
+			font-weight: var(--wp--custom--typography--font-weight--medium);
+			color: var(--wp--custom--color--decision--text--action--high--primary);
+			background: transparent;
+			border: none;
+			padding: var(--wp--preset--spacing--50) var(--wp--preset--spacing--60);
+			&:hover {
+				cursor: pointer;
+				background-color: var(--wp--custom--color--decision--background--default--neutral-hover);
+			}
+			&::after {
+				content: '';
+				display: block;
+				height: var(--wp--custom--icon--size--md);
+				aspect-ratio: 1;
+				background-color: currentColor;
+				mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0ibTEyIDEzLjE3MiA0Ljk1LTQuOTUgMS40MTQgMS40MTRMMTIgMTYgNS42MzYgOS42MzYgNy4wNSA4LjIyMmw0Ljk1IDQuOTVaIi8+PC9zdmc+);
+				mask-repeat: no-repeat;
+				mask-size: contain;
+				mask-position: center;
+				mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0ibTEyIDEzLjE3MiA0Ljk1LTQuOTUgMS40MTQgMS40MTRMMTIgMTYgNS42MzYgOS42MzYgNy4wNSA4LjIyMmw0Ljk1IDQuOTVaIi8+PC9zdmc+);
+				transition: transform 0.3s;
+			}
+		}
+	}
+
+	.wp-block-wpdsfr-accordion__content { display: none }
+}
+
+.wp-block-wpdsfr-accordion.wp-block-wpdsfr-accordion--is-open {
+	.wp-block-wpdsfr-accordion__button {
+		background-color: var(--wp--custom--color--decision--background--open--primary);
+		&:hover {
+			cursor: pointer;
+			background-color: var(--wp--custom--color--decision--background--open--primary-hover);
+		}
+		&::after {
+			transform: rotate(180deg);
+		}
+	}
+	.wp-block-wpdsfr-accordion__content {
+		display: block;
+		padding: var(--wp--preset--spacing--60);
+		padding-bottom: var(--wp--preset--spacing--70);
+	}
+}

@@ -1,0 +1,116 @@
+{
+	"blocks": {
+		"core/button": {
+			"border": {
+				"radius": "0",
+				"width": "1px",
+				"style": "solid"
+			}
+		},
+		"core/search": {
+			"border": {
+				"color": "transparent"
+			}
+		}
+	},
+	"color": {
+		"background": "var(--wp--preset--color--background)",
+		"text": "var(--wp--custom--color--decision--text--default--neutral)"
+	},
+	"typography": {
+		"fontFamily": "var(--wp--preset--font-family--primary)"
+	},
+	"elements": {
+		"link": {
+			"color": {
+				"text": "var(--wp--custom--color--decision--text--action--high--primary)"
+			},
+			":hover": {
+				"css": "text-decoration-thickness: 3px;"
+			},
+			":active": {
+				"color": {
+					"background": "var(--wp--custom--color--decision--background--default--neutral-active)"
+				}
+			},
+			":visited": {
+				"color": {
+					"text": "var(--wp--custom--color--decision--text--action--high--primary)"
+				}
+			}
+		},
+		"button": {
+			"typography": {
+				"fontWeight": "var(--wp--custom--typography--font-weight--medium)"
+			},
+			"border": {
+				"radius": "0",
+				"color": "var(--wp--custom--decision--border--action--high--primary)",
+				"style": "solid",
+				"width": "1px"
+			},
+			"color": {
+				"text": "var(--wp--custom--color--decision--text--inverted--neutral)",
+				"background": "var(--wp--custom--color--decision--background--action--high--primary)"
+			},
+			":hover": {
+				"color": {
+					"background": "var(--wp--custom--color--decision--background--action--high--primary-hover)"
+				},
+				"border": {
+					"color": "var(--wp--custom--decision--border--action--high--primary-hover)"
+				}
+			}
+		},
+		"heading": {
+			"color": {
+				"text": "var(--wp--custom--color--decision--text--title--neutral)"
+			},
+			"typography": {
+				"fontWeight": "var(--wp--custom--typography--font-weight--bold)"
+			},
+			"spacing": {
+				"margin": {
+					"bottom": "var(--wp--custom--spacing--3-w)",
+					"top": "0"
+				}
+			}
+		},
+		"h1": {
+			"typography": {
+				"fontSize": "2.5rem",
+				"lineHeight": "3rem"
+			}
+		},
+		"h2": {
+			"typography": {
+				"fontSize": "2rem",
+				"lineHeight": "2.5rem"
+			}
+		},
+		"h3": {
+			"typography": {
+				"fontSize": "1.75rem",
+				"lineHeight": "2.25rem"
+			}
+		},
+		"h4": {
+			"typography": {
+				"fontSize": "1.5rem",
+				"lineHeight": "2rem"
+			}
+		},
+		"h5": {
+			"typography": {
+				"fontSize": "1.375rem",
+				"lineHeight": "1.75rem"
+			}
+		},
+		"h6": {
+			"typography": {
+				"fontSize": "1.25rem",
+				"lineHeight": "1.75rem"
+			}
+		}
+	}
+}
