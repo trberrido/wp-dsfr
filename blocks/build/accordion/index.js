@@ -22,7 +22,9 @@ function Edit({
   attributes,
   setAttributes
 }) {
-  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)();
+  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
+    className: 'fr-accordion'
+  });
   const MC_TEMPLATE = [['core/paragraph', {}]];
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
     ...blockProps
@@ -35,9 +37,9 @@ function Edit({
       level: newLevel
     })
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
-    className: "wp-block-wpdsfr-accordion__title"
+    className: "fr-accordion__title"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
-    className: "wp-block-wpdsfr-accordion__button",
+    className: "fr-accordion__btn",
     tagName: 'button',
     onChange: content => setAttributes({
       content: content
@@ -140,7 +142,7 @@ module.exports = window["wp"]["blocks"];
   \**********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wpdsfr/accordion","version":"0.1.0","title":"Accordion","category":"text","icon":"block-default","description":"An accordion item","parent":["wpdsfr/accordions"],"supports":{"interactivity":true},"attributes":{"level":{"type":"integer","default":3},"levelOptions":{"type":"array"},"content":{"type":"string"}},"textdomain":"dsfr","editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php","viewScriptModule":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wpdsfr/accordion","version":"0.1.0","title":"Accordion","category":"text","icon":"block-default","description":"An accordion item","parent":["wpdsfr/accordions"],"supports":{"interactivity":true,"className":false},"attributes":{"level":{"type":"integer","default":3},"levelOptions":{"type":"array"},"content":{"type":"string"}},"textdomain":"dsfr","editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php","viewScriptModule":"file:./view.js"}');
 
 /***/ })
 

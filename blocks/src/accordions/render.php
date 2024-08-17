@@ -1,3 +1,3 @@
-<div <?php echo get_block_wrapper_attributes(); ?>>
+<div class="fr-accordions-group">
 	<?php echo $content; ?>
 </div>

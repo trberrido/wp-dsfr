@@ -25,7 +25,9 @@ function Edit({
   const MC_TEMPLATE = [['wpdsfr/accordion', {}]];
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks, {
     template: MC_TEMPLATE,
-    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)()
+    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
+      className: 'fr-accordions-group'
+    })
   });
 }
 
@@ -122,7 +124,7 @@ module.exports = window["wp"]["blocks"];
   \***********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wpdsfr/accordions","version":"0.1.0","title":"Accordions","category":"theme","description":"Group of accordions","allowedBlocks":["wpdsfr/accordion"],"textdomain":"wpdsfr","editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php","viewScriptModule":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wpdsfr/accordions","version":"0.1.0","title":"Accordions","category":"theme","supports":{"className":false},"description":"Group of accordions","allowedBlocks":["wpdsfr/accordion"],"textdomain":"wpdsfr","editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php","viewScriptModule":"file:./view.js"}');
 
 /***/ })
 

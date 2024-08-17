@@ -11,7 +11,8 @@
     "wpdsfr/accordions"
   ],
   "supports": {
-    "interactivity": true
+    "interactivity": true,
+    "className": false
   },
   "attributes": {
     "level": {

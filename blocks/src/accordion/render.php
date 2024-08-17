@@ -7,11 +7,11 @@
 	data-wp-interactive="wpdsfr/accordion"
 	data-wp-context='{ "isOpen": false }'
 	data-wp-class--wp-block-wpdsfr-accordion--is-open="context.isOpen"
-	<?php echo get_block_wrapper_attributes(); ?>>
+	<?php echo get_block_wrapper_attributes(['class' => 'fr-accordion']); ?>>
 
-	<<?php echo $heading_level; ?> class="wp-block-wpdsfr-accordion__title">
+	<<?php echo $heading_level; ?> class="fr-accordion__title">
 		<button
-			class="wp-block-wpdsfr-accordion__button"
+			class="fr-accordion__btn"
 			data-wp-on--click="actions.toggle"
 			data-wp-bind--aria-expanded="context.isOpen"
 			aria-controls="<?php echo esc_attr( $unique_id ); ?>"
@@ -22,7 +22,9 @@
 
 	<div
 		id="<?php echo esc_attr( $unique_id ); ?>"
-		class="wp-block-wpdsfr-accordion__content">
+		class="fr-collapse"
+		data-wp-class--fr-collapse--expanded="context.isOpen"
+	>
 		<?php echo $content; ?>
 	</div>
 

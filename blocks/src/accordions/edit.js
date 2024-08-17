@@ -4,6 +4,6 @@ export default function Edit( { attributes, setAttributes } ) {
 
 	const MC_TEMPLATE = [ [ 'wpdsfr/accordion', {} ] ];
 
-	return ( <InnerBlocks template={ MC_TEMPLATE } { ...useBlockProps() } /> );
+	return ( <InnerBlocks template={ MC_TEMPLATE } { ...useBlockProps( {className: 'fr-accordions-group'} ) } /> );
 
 }

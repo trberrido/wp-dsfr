@@ -1,7 +1,7 @@
 import { useBlockProps, RichText, InnerBlocks, BlockControls, HeadingLevelDropdown } from '@wordpress/block-editor';
 
 export default function Edit( { attributes, setAttributes } ) {
-	const blockProps = useBlockProps();
+	const blockProps = useBlockProps( {className: 'fr-accordion'} );
 	const MC_TEMPLATE = [ [ 'core/paragraph', {} ] ];
 	return (
 		<section { ...blockProps }>
@@ -12,9 +12,9 @@ export default function Edit( { attributes, setAttributes } ) {
 					onChange={ newLevel => setAttributes( { level: newLevel } )	}
 				/>
 			</BlockControls>
-			<span className='wp-block-wpdsfr-accordion__title'>
+			<span className='fr-accordion__title'>
 				<RichText
-					className='wp-block-wpdsfr-accordion__button'
+					className='fr-accordion__btn'
 					tagName={ 'button' }
 					onChange={ ( content ) => setAttributes( { content: content } ) }
 					value={ attributes.content }

@@ -3,21 +3,21 @@
 add_action( 'enqueue_block_assets', 'wpdsfr__enqueue_styles' );
 function wpdsfr__enqueue_styles(): void {
 
-	if ( file_exists( get_template_directory() . '/assets/style.css' )
+	if ( file_exists( get_template_directory() . '/assets/css/style.min.css' )
 		&& ( wp_get_environment_type() === 'production' || wp_get_environment_type() === 'staging' ) ) {
 
 		wp_enqueue_style(
 			'wpdsfr-style',
-			get_template_directory_uri() . '/assets/style.css',
+			get_template_directory_uri() . '/assets/css/style.min.css',
 			false,
-			filemtime( get_template_directory() . '/assets/style.css' )
+			filemtime( get_template_directory() . '/assets/css/style.min.css' )
 		);
 
 	} else {
 
 		wpdsfr__files__concatenation(
 			get_template_directory() . '/assets/css/*.css',
-			get_template_directory() . '/assets/style.css'
+			get_template_directory() . '/assets/css/style.min.css'
 		);
 
 		foreach ( glob( get_template_directory() . '/assets/css/*.css' ) as $filepath ) {
