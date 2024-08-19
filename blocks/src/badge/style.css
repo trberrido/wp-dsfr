@@ -1,6 +1,3 @@
-/*!*************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/badge/style.css ***!
-  \*************************************************************************************************************************************************************************/
 /*!
  * DSFR v1.12.1 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
  */
@@ -123,32 +120,32 @@
 
 .fr-badge.fr-badge--info::before,
 .fr-badge--sm.fr-badge--info::before {
-  -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkuNSwyLjVoLTE1Yy0xLjEsMC0yLDAuOS0yLDJ2MTVjMCwxLjEsMC45LDIsMiwyaDE1YzEuMSwwLDItMC45LDItMnYtMTVDMjEuNSwzLjQsMjAuNiwyLjUsMTkuNSwyLjV6IE0xMywxN2gtMnYtNmgyVjE3eiBNMTMsOWgtMlY3aDJWOXoiLz48L3N2Zz4K);
-  mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkuNSwyLjVoLTE1Yy0xLjEsMC0yLDAuOS0yLDJ2MTVjMCwxLjEsMC45LDIsMiwyaDE1YzEuMSwwLDItMC45LDItMnYtMTVDMjEuNSwzLjQsMjAuNiwyLjUsMTkuNSwyLjV6IE0xMywxN2gtMnYtNmgyVjE3eiBNMTMsOWgtMlY3aDJWOXoiLz48L3N2Zz4K);
+  -webkit-mask-image: url("../../icons/system/fr--info-fill.svg");
+  mask-image: url("../../icons/system/fr--info-fill.svg");
 }
 
 .fr-badge.fr-badge--success::before,
 .fr-badge--sm.fr-badge--success::before {
-  -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMjJDNi40NzcgMjIgMiAxNy41MjMgMiAxMlM2LjQ3NyAyIDEyIDJzMTAgNC40NzcgMTAgMTAtNC40NzcgMTAtMTAgMTB6bS0uOTk3LTZsNy4wNy03LjA3MS0xLjQxNC0xLjQxNC01LjY1NiA1LjY1Ny0yLjgyOS0yLjgyOS0xLjQxNCAxLjQxNEwxMS4wMDMgMTZ6Ii8+PC9zdmc+Cg==);
-  mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMjJDNi40NzcgMjIgMiAxNy41MjMgMiAxMlM2LjQ3NyAyIDEyIDJzMTAgNC40NzcgMTAgMTAtNC40NzcgMTAtMTAgMTB6bS0uOTk3LTZsNy4wNy03LjA3MS0xLjQxNC0xLjQxNC01LjY1NiA1LjY1Ny0yLjgyOS0yLjgyOS0xLjQxNCAxLjQxNEwxMS4wMDMgMTZ6Ii8+PC9zdmc+Cg==);
+  -webkit-mask-image: url("../../icons/system/fr--success-fill.svg");
+  mask-image: url("../../icons/system/fr--success-fill.svg");
 }
 
 .fr-badge.fr-badge--error::before,
 .fr-badge--sm.fr-badge--error::before {
-  -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTcuNSwyLjVoLTExTDEsMTJsNS41LDkuNWgxMUwyMywxMkwxNy41LDIuNXogTTE2LjIsMTQuOGwtMS40LDEuNEwxMiwxMy40bC0yLjgsMi44bC0xLjQtMS40bDIuOC0yLjhMNy44LDkuMmwxLjQtMS40bDIuOCwyLjhsMi44LTIuOGwxLjQsMS40TDEzLjQsMTJMMTYuMiwxNC44eiIvPjwvc3ZnPgo=);
-  mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTcuNSwyLjVoLTExTDEsMTJsNS41LDkuNWgxMUwyMywxMkwxNy41LDIuNXogTTE2LjIsMTQuOGwtMS40LDEuNEwxMiwxMy40bC0yLjgsMi44bC0xLjQtMS40bDIuOC0yLjhMNy44LDkuMmwxLjQtMS40bDIuOCwyLjhsMi44LTIuOGwxLjQsMS40TDEzLjQsMTJMMTYuMiwxNC44eiIvPjwvc3ZnPgo=);
+  -webkit-mask-image: url("../../icons/system/fr--error-fill.svg");
+  mask-image: url("../../icons/system/fr--error-fill.svg");
 }
 
 .fr-badge.fr-badge--warning::before,
 .fr-badge--sm.fr-badge--warning::before {
-  -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJtMTIuODY2IDMgOS41MjYgMTYuNWExIDEgMCAwIDEtLjg2NiAxLjVIMi40NzRhMSAxIDAgMCAxLS44NjYtMS41TDExLjEzNCAzYTEgMSAwIDAgMSAxLjczMiAwWk0xMSAxNnYyaDJ2LTJoLTJabTAtN3Y1aDJWOWgtMloiLz48L3N2Zz4K);
-  mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJtMTIuODY2IDMgOS41MjYgMTYuNWExIDEgMCAwIDEtLjg2NiAxLjVIMi40NzRhMSAxIDAgMCAxLS44NjYtMS41TDExLjEzNCAzYTEgMSAwIDAgMSAxLjczMiAwWk0xMSAxNnYyaDJ2LTJoLTJabTAtN3Y1aDJWOWgtMloiLz48L3N2Zz4K);
+  -webkit-mask-image: url("../../icons/system/fr--warning-fill.svg");
+  mask-image: url("../../icons/system/fr--warning-fill.svg");
 }
 
 .fr-badge.fr-badge--new::before,
 .fr-badge--sm.fr-badge--new::before {
-  -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48cGF0aCBkPSJNMTMgMTBoN2wtOSAxM3YtOUg0bDktMTN2OVoiLz48L3N2Zz4=);
-  mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48cGF0aCBkPSJNMTMgMTBoN2wtOSAxM3YtOUg0bDktMTN2OVoiLz48L3N2Zz4=);
+  -webkit-mask-image: url("../../icons/weather/flashlight-fill.svg");
+  mask-image: url("../../icons/weather/flashlight-fill.svg");
 }
 
 .fr-badge--info::before,
@@ -455,7 +452,7 @@
     outline: 1px solid;
   }
 }
-@media screen and (min-width: 0\0) and (-webkit-min-device-pixel-ratio: 0.75), screen and (min-width: 0\0) and (min-resolution: 72dpi) {
+@media screen and (min-width: 0\0) and (min-resolution: 72dpi) {
   .fr-badge::before,
   .fr-badge::after {
     background-color: transparent;
@@ -474,35 +471,35 @@
   .fr-badge.fr-badge--info::after,
   .fr-badge--sm.fr-badge--info::before,
   .fr-badge--sm.fr-badge--info::after {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkuNSwyLjVoLTE1Yy0xLjEsMC0yLDAuOS0yLDJ2MTVjMCwxLjEsMC45LDIsMiwyaDE1YzEuMSwwLDItMC45LDItMnYtMTVDMjEuNSwzLjQsMjAuNiwyLjUsMTkuNSwyLjV6IE0xMywxN2gtMnYtNmgyVjE3eiBNMTMsOWgtMlY3aDJWOXoiLz48L3N2Zz4K);
+    background-image: url("../../icons/system/fr--info-fill.svg");
   }
 
   .fr-badge.fr-badge--success::before,
   .fr-badge.fr-badge--success::after,
   .fr-badge--sm.fr-badge--success::before,
   .fr-badge--sm.fr-badge--success::after {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMjJDNi40NzcgMjIgMiAxNy41MjMgMiAxMlM2LjQ3NyAyIDEyIDJzMTAgNC40NzcgMTAgMTAtNC40NzcgMTAtMTAgMTB6bS0uOTk3LTZsNy4wNy03LjA3MS0xLjQxNC0xLjQxNC01LjY1NiA1LjY1Ny0yLjgyOS0yLjgyOS0xLjQxNCAxLjQxNEwxMS4wMDMgMTZ6Ii8+PC9zdmc+Cg==);
+    background-image: url("../../icons/system/fr--success-fill.svg");
   }
 
   .fr-badge.fr-badge--error::before,
   .fr-badge.fr-badge--error::after,
   .fr-badge--sm.fr-badge--error::before,
   .fr-badge--sm.fr-badge--error::after {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTcuNSwyLjVoLTExTDEsMTJsNS41LDkuNWgxMUwyMywxMkwxNy41LDIuNXogTTE2LjIsMTQuOGwtMS40LDEuNEwxMiwxMy40bC0yLjgsMi44bC0xLjQtMS40bDIuOC0yLjhMNy44LDkuMmwxLjQtMS40bDIuOCwyLjhsMi44LTIuOGwxLjQsMS40TDEzLjQsMTJMMTYuMiwxNC44eiIvPjwvc3ZnPgo=);
+    background-image: url("../../icons/system/fr--error-fill.svg");
   }
 
   .fr-badge.fr-badge--warning::before,
   .fr-badge.fr-badge--warning::after,
   .fr-badge--sm.fr-badge--warning::before,
   .fr-badge--sm.fr-badge--warning::after {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJtMTIuODY2IDMgOS41MjYgMTYuNWExIDEgMCAwIDEtLjg2NiAxLjVIMi40NzRhMSAxIDAgMCAxLS44NjYtMS41TDExLjEzNCAzYTEgMSAwIDAgMSAxLjczMiAwWk0xMSAxNnYyaDJ2LTJoLTJabTAtN3Y1aDJWOWgtMloiLz48L3N2Zz4K);
+    background-image: url("../../icons/system/fr--warning-fill.svg");
   }
 
   .fr-badge.fr-badge--new::before,
   .fr-badge.fr-badge--new::after,
   .fr-badge--sm.fr-badge--new::before,
   .fr-badge--sm.fr-badge--new::after {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48cGF0aCBkPSJNMTMgMTBoN2wtOSAxM3YtOUg0bDktMTN2OVoiLz48L3N2Zz4=);
+    background-image: url("../../icons/weather/flashlight-fill.svg");
   }
 
   ul.fr-badges-group {
@@ -751,6 +748,3 @@
     background-color: #f3ede5;
   }
 }
-
-
-/*# sourceMappingURL=style-index.css.map*/

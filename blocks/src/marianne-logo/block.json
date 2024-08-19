@@ -10,25 +10,12 @@
 		"content": {
 			"type": "string",
 			"default": "République<br>Française"
+		},
+		"size": {
+			"type": "string",
+			"default": "md"
 		}
 	},
-	"styles": [
-		{
-			"isDefault": false,
-			"label": "Small",
-			"name": "sm"
-		},
-		{
-			"isDefault": true,
-			"label": "Medium",
-			"name": "md"
-		},
-		{
-			"isDefault": false,
-			"label": "Large",
-			"name": "lg"
-		}
-	],
 	"textdomain": "wpdsfr",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",

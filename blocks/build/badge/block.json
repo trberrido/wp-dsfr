@@ -14,38 +14,15 @@
       "type": "string",
       "default": "Liberté"
     },
+    "type": {
+      "type": "string",
+      "default": ""
+    },
     "hasIcon": {
       "type": "boolean",
       "default": false
     }
   },
-  "styles": [
-    {
-      "isDefault": true,
-      "label": "Neutral",
-      "name": "neutral"
-    },
-    {
-      "isDefault": false,
-      "label": "Information",
-      "name": "info"
-    },
-    {
-      "isDefault": false,
-      "label": "Success",
-      "name": "success"
-    },
-    {
-      "isDefault": false,
-      "label": "Warning",
-      "name": "warning"
-    },
-    {
-      "isDefault": false,
-      "label": "Error",
-      "name": "error"
-    }
-  ],
   "textdomain": "wpdsfr",
   "editorScript": "file:./index.js",
   "style": "file:./style-index.css",
