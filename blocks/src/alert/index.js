@@ -14,7 +14,7 @@ import { InnerBlocks } from '@wordpress/block-editor';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './style.scss';
+import './style.css';
 
 /**
  * Internal dependencies
@@ -34,6 +34,5 @@ registerBlockType( metadata, {
 	/**
 	 * @see ./edit.js
 	 */
-	edit: Edit,
-	save: props => { return <InnerBlocks.Content /> }
+	edit: Edit
 } );

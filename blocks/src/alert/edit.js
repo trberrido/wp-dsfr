@@ -1,39 +1,42 @@
-/**
- * Retrieves the translation of text.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
- */
-import { __ } from '@wordpress/i18n';
+import { useBlockProps, BlockControls, InspectorControls, HeadingLevelDropdown, RichText } from '@wordpress/block-editor';
+import { Panel, PanelBody, ToggleControl } from '@wordpress/components';
+import SelectControlType from '../components/SelectControlType.js';
 
-/**
- * React hook that is used to mark the block wrapper element.
- * It provides all the necessary props like the class name.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
- */
-import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
-
-/**
- * The edit function describes the structure of your block in the context of the
- * editor. This represents what the editor will render when the block is used.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
- *
- * @param {Object}   props               Properties passed to the function.
- * @param {Object}   props.attributes    Available block attributes.
- * @param {Function} props.setAttributes Function that updates individual attributes.
- *
- * @return {Element} Element to render.
- */
 export default function Edit( { attributes, setAttributes } ) {
-	const blockProps = useBlockProps();
-	const MC_TEMPLATE = [ [ 'core/paragraph', {} ] ];
+
+	const classForType = attributes.type ? ' fr-badge--' + attributes.type : '';
+	const blockProps = useBlockProps({className: 'fr-alert' + classForType});
 
 	return (
 		<div { ...blockProps }>
-			<InnerBlocks
-				className='wp-block-wpdsfr-accordion__content'
-				template={ MC_TEMPLATE } />
+			<InspectorControls key="setting">
+				<Panel>
+					<PanelBody initialOpen={false} title='Options'>
+						<SelectControlType attributes={attributes} setAttributes={setAttributes} />
+					</PanelBody>
+				</Panel>
+			</InspectorControls>
+			<BlockControls group="block">
+				<HeadingLevelDropdown
+					value={ attributes.level }
+					options={ attributes.levelOptions }
+					onChange={ newLevel => setAttributes( { level: newLevel } )	}
+				/>
+			</BlockControls>
+			<RichText
+				className='fr-alert__title'
+				tagName={ 'h3' }
+				onChange={ ( newTitle ) => setAttributes( { title: newTitle } ) }
+				value={ attributes.title }
+				placeholder="Alert title"
+			/>
+			<RichText
+				{ ...blockProps }
+				tagName='p'
+				onChange={ ( newContent ) => setAttributes( { content: newContent } ) }
+				value={ attributes.content }
+				placeholder="Alert content"
+			/>
 		</div>
 	);
 }

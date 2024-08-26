@@ -212,7 +212,7 @@ module.exports = window["wp"]["element"];
   \******************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wpdsfr/badge","version":"0.1.0","title":"Badge","category":"theme","description":"A simple badge","parent":["wpdsfr/badges"],"attributes":{"content":{"type":"string","default":"Liberté"},"type":{"type":"string","default":""},"hasIcon":{"type":"boolean","default":false}},"textdomain":"wpdsfr","editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wpdsfr/badge","version":"0.1.0","title":"Badge","category":"theme","description":"A simple badge","supports":{"className":false,"customClassName":false},"parent":["wpdsfr/badges"],"attributes":{"content":{"type":"string","default":"Liberté"},"type":{"type":"string","default":""},"hasIcon":{"type":"boolean","default":false}},"textdomain":"wpdsfr","editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ })
 

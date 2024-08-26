@@ -14,49 +14,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-
-/**
- * Retrieves the translation of text.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
- */
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_SelectControlType_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/SelectControlType.js */ "./src/components/SelectControlType.js");
 
 
-/**
- * React hook that is used to mark the block wrapper element.
- * It provides all the necessary props like the class name.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
- */
 
 
-/**
- * The edit function describes the structure of your block in the context of the
- * editor. This represents what the editor will render when the block is used.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
- *
- * @param {Object}   props               Properties passed to the function.
- * @param {Object}   props.attributes    Available block attributes.
- * @param {Function} props.setAttributes Function that updates individual attributes.
- *
- * @return {Element} Element to render.
- */
 function Edit({
   attributes,
   setAttributes
 }) {
-  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)();
-  const MC_TEMPLATE = [['core/paragraph', {}]];
+  const classForType = attributes.type ? ' fr-badge--' + attributes.type : '';
+  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
+    className: 'fr-alert' + classForType
+  });
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
-    className: "wp-block-wpdsfr-accordion__content",
-    template: MC_TEMPLATE
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
+    key: "setting"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Panel, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
+    initialOpen: false,
+    title: "Options"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_SelectControlType_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    attributes: attributes,
+    setAttributes: setAttributes
+  })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.BlockControls, {
+    group: "block"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.HeadingLevelDropdown, {
+    value: attributes.level,
+    options: attributes.levelOptions,
+    onChange: newLevel => setAttributes({
+      level: newLevel
+    })
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
+    className: "fr-alert__title",
+    tagName: 'h3',
+    onChange: newTitle => setAttributes({
+      title: newTitle
+    }),
+    value: attributes.title,
+    placeholder: "Alert title"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
+    ...blockProps,
+    tagName: "p",
+    onChange: newContent => setAttributes({
+      content: newContent
+    }),
+    value: attributes.content,
+    placeholder: "Alert content"
   }));
 }
 
@@ -75,7 +83,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.scss */ "./src/alert/style.scss");
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ "./src/alert/style.css");
 /* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./edit */ "./src/alert/edit.js");
 /* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./block.json */ "./src/alert/block.json");
 
@@ -121,18 +129,64 @@ __webpack_require__.r(__webpack_exports__);
   /**
    * @see ./edit.js
    */
-  edit: _edit__WEBPACK_IMPORTED_MODULE_4__["default"],
-  save: props => {
-    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null);
-  }
+  edit: _edit__WEBPACK_IMPORTED_MODULE_4__["default"]
 });
 
 /***/ }),
 
-/***/ "./src/alert/style.scss":
-/*!******************************!*\
-  !*** ./src/alert/style.scss ***!
-  \******************************/
+/***/ "./src/components/SelectControlType.js":
+/*!*********************************************!*\
+  !*** ./src/components/SelectControlType.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const SelectControlType = ({
+  attributes,
+  setAttributes
+}) => {
+  const types = [{
+    label: 'Default',
+    value: ''
+  }, {
+    label: 'Information',
+    value: 'info'
+  }, {
+    label: 'Success',
+    value: 'success'
+  }, {
+    label: 'Error',
+    value: 'error'
+  }, {
+    label: 'Warning',
+    value: 'warning'
+  }];
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
+    label: "Type",
+    options: types,
+    onChange: value => setAttributes({
+      type: value
+    }),
+    value: attributes.type
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SelectControlType);
+
+/***/ }),
+
+/***/ "./src/alert/style.css":
+/*!*****************************!*\
+  !*** ./src/alert/style.css ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -171,13 +225,13 @@ module.exports = window["wp"]["blocks"];
 
 /***/ }),
 
-/***/ "@wordpress/i18n":
-/*!******************************!*\
-  !*** external ["wp","i18n"] ***!
-  \******************************/
+/***/ "@wordpress/components":
+/*!************************************!*\
+  !*** external ["wp","components"] ***!
+  \************************************/
 /***/ ((module) => {
 
-module.exports = window["wp"]["i18n"];
+module.exports = window["wp"]["components"];
 
 /***/ }),
 
@@ -187,7 +241,7 @@ module.exports = window["wp"]["i18n"];
   \******************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wpdsfr/alert","version":"0.1.0","title":"Alert","category":"theme","description":"Les alertes permettent d’attirer l’attention de l’utilisateur sur une information sans interrompre sa tâche en cours.","styles":[{"isDefault":true,"label":"Information","name":"info"},{"isDefault":false,"label":"Erreur","name":"error"},{"isDefault":false,"label":"Success","name":"success"},{"isDefault":false,"label":"Attention","name":"warning"}],"textdomain":"wpdsfr","editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wpdsfr/alert","version":"0.1.0","title":"Alert","category":"theme","description":"Les alertes permettent d’attirer l’attention de l’utilisateur sur une information sans interrompre sa tâche en cours.","attributes":{"title":{"type":"string","default":""},"level":{"type":"integer","default":3},"levelOptions":{"type":"array"},"content":{"type":"string"},"type":{"type":"string"},"size":{"type":"string","default":"md"}},"supports":{"className":false,"customClassName":false},"textdomain":"wpdsfr","editorScript":"file:./index.js","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ })
 

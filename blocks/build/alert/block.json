@@ -6,28 +6,33 @@
   "title": "Alert",
   "category": "theme",
   "description": "Les alertes permettent d’attirer l’attention de l’utilisateur sur une information sans interrompre sa tâche en cours.",
-  "styles": [
-    {
-      "isDefault": true,
-      "label": "Information",
-      "name": "info"
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
     },
-    {
-      "isDefault": false,
-      "label": "Erreur",
-      "name": "error"
+    "level": {
+      "type": "integer",
+      "default": 3
     },
-    {
-      "isDefault": false,
-      "label": "Success",
-      "name": "success"
+    "levelOptions": {
+      "type": "array"
     },
-    {
-      "isDefault": false,
-      "label": "Attention",
-      "name": "warning"
+    "content": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string",
+      "default": "md"
     }
-  ],
+  },
+  "supports": {
+    "className": false,
+    "customClassName": false
+  },
   "textdomain": "wpdsfr",
   "editorScript": "file:./index.js",
   "style": "file:./style-index.css",

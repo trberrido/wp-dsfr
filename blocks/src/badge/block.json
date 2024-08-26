@@ -7,6 +7,10 @@
 	"title": "Badge",
 	"category": "theme",
 	"description": "A simple badge",
+	"supports": {
+		"className": false,
+		"customClassName": false
+	},
 	"parent": ["wpdsfr/badges"],
 	"attributes": {
 		"content": {

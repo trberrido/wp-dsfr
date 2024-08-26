@@ -1,4 +1,4 @@
-	import { Fragment } from '@wordpress/element';
+import { Fragment } from '@wordpress/element';
 import { InspectorControls, useBlockProps, RichText } from '@wordpress/block-editor';
 import { Panel, PanelBody, ToggleControl } from '@wordpress/components';
 import SelectControlType from '../components/SelectControlType.js';
