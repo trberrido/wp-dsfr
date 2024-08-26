@@ -11,6 +11,10 @@
 			"type": "string",
 			"default": "République<br>Française"
 		},
+		"isLink": {
+			"type": "boolean",
+			"default": true
+		},
 		"size": {
 			"type": "string",
 			"default": "md"

@@ -87,11 +87,17 @@ function Edit({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_SelectControlSize_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
     attributes: attributes,
     setAttributes: setAttributes
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
+    label: "Cr\xE9er un lien vers la page d\u2019accueil",
+    checked: attributes.isLink,
+    onChange: () => setAttributes({
+      isLink: !attributes.isLink
+    })
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     ...blockProps,
     tagName: "p",
-    onChange: content => setAttributes({
-      content
+    onChange: newContent => setAttributes({
+      content: newContent
     }),
     value: attributes.content
   }));
@@ -201,7 +207,7 @@ module.exports = window["wp"]["element"];
   \**************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wpdsfr/marianne-logo","version":"0.1.0","title":"Logo Marianne","category":"theme","description":"The Marianne logo","attributes":{"content":{"type":"string","default":"République<br>Française"},"size":{"type":"string","default":"md"}},"textdomain":"wpdsfr","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"wpdsfr/marianne-logo","version":"0.1.0","title":"Logo Marianne","category":"theme","description":"The Marianne logo","attributes":{"content":{"type":"string","default":"République<br>Française"},"isLink":{"type":"boolean","default":true},"size":{"type":"string","default":"md"}},"textdomain":"wpdsfr","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ })
 
