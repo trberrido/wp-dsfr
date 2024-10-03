@@ -1,5 +1,10 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit;
 
+add_action( 'wp_enqueue_scripts', 'wpdsfr__dequeue_styles' );
+function wpdsfr__dequeue_styles() {
+	wp_dequeue_style( 'global-styles' );
+}
+
 add_action( 'enqueue_block_assets', 'wpdsfr__enqueue_styles' );
 function wpdsfr__enqueue_styles(): void {
 

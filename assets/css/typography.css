@@ -1,4 +1,4 @@
-.has-text-xs-font-size {
+/* .has-text-xs-font-size {
 	color: var(--wp--custom--color--decision--text--mention--neutral);
 }
 
@@ -30,8 +30,6 @@
 .has-text-sm-font-size { line-height: 1.5rem }
 .has-text-xs-font-size { line-height: 1.25rem }
 
-/* Links */
-
 a {
 	text-underline-offset: var(--wp--custom--spacing--1-v);
 }
@@ -42,4 +40,4 @@ a:hover {
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	text-decoration: none;
-}
+} */

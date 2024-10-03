@@ -1,7 +1,7 @@
 <?php
 
 $class = [ 'fr-alert' ];
-if ( strlen( $attributes['type'] ) ) {
+if ( isset( $attributes['type'] ) ) {
 	array_push( $class, 'fr-alert--' . $attributes['type'] );
 }
 
